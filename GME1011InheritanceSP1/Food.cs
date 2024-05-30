@@ -60,5 +60,10 @@ namespace GME1011InheritanceSP1
             _healingPower *= 3;
             _freshness = 100;
         }
+
+        public override string ToString()
+        {
+            return "Food[" + base.ToString() + ", heal: " + _healingPower + "]";
+        }
     }
 }
